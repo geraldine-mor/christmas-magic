@@ -1,0 +1,9 @@
+/*Apply background colours to check link and see layout*/
+body {
+    background-color: green;
+}
+
+div {
+    background-color: beige;
+    border: 1px solid black;
+}
