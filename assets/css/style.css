@@ -5,5 +5,48 @@ body {
 
 div {
     background-color: beige;
-    border: 1px solid black;
+    
+}
+
+.row {
+    max-width: 100vw;
+}
+
+img {
+    height: 125px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.card-flip {
+    height: 125px;
+    width: 93.28px;
+    perspective: 1000px;
+    padding: 0;
+}
+
+.card-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 1.2s;
+    transform-style: preserve-3d;
+}
+
+.flipped .card-flip-inner {
+    transform: rotateY(-180deg);
+}
+
+.card-flip-front,
+.card-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-flip-back {
+    transform: rotateY(-180deg);
 }
