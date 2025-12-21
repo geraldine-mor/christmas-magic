@@ -1,69 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-        <!--Bootstrap CSS-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <body class="homepage">
+    <!-- Top-right button -->
+    <a href="about.html" class="btn btn-lg spell-cloud-btn top-right-spell">
+      <img src="assets/images/Our-team-button.webp" alt="Our Team" />
+    </a>
 
-        <!--Custom CSS-->    
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+    <!-- Title -->
+    <div class="container text-center mt-5">
+      <h1 class="christmas-title">Christmas Magic Game</h1>
+      <p class="lead intro-text">Flip the cards and find the matching pairs!</p>
+    </div>
 
-    <body>
-
-        <a href="about.html" class="btn btn-lg spell-cloud-btn top-right-spell">
-		<img src="assets/images/Our-team-button.webp" alt="Our Team">
-		</a>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div id="card1-flip" class="col-4 col-md-3 card-flip game-card" data-num="one">
-                    <div id="card1-flip-inner" class="card-flip-inner">
-                        <div id="card1-flip-front" class="card-flip-front">
-                            <img id="card1-back" src="assets/images/card-back.webp" alt="Back of a playing card">
-                        </div>
-                        <div id="card1-flip-back" class="card-flip-back">
-                            <img id="card1-front" src="assets/images/elf.webp" alt="An image of an elf">
-                        </div>
-                    </div>
-                </div>
-                <div id="card2-flip" class="col-4 col-md-3 card-flip game-card" data-num="two">
-                    <div id="card2-flip-inner" class="card-flip-inner">
-                        <div id="card2-flip-front" class="card-flip-front">
-                            <img id="card2-back" src="assets/images/card-back.webp" alt="Back of a playing card">
-                        </div>
-                        <div id="card2-flip-back" class="card-flip-back">
-                            <img id="card2-front" src="assets/images/elf.webp" alt="An image of an elf">
-                        </div>
-                    </div>
-                </div>
-                <div id="card3-flip" class="col-4 col-md-3 card-flip game-card" data-num="three">
-                    <div id="card3-flip-inner" class="card-flip-inner">
-                        <div id="card3-flip-front" class="card-flip-front">
-                            <img id="card3-back" src="assets/images/card-back.webp" alt="Back of a playing card">
-                        </div>
-                        <div id="card3-flip-back" class="card-flip-back">
-                            <img id="card3-front" src="assets/images/elf.webp" alt="An image of an elf">
-                        </div>
-                    </div>
-                </div>
-                
-                
+    <!-- Cards -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div
+          id="card1-flip"
+          class="col-4 col-md-3 card-flip game-card"
+          data-num="one"
+        >
+          <div id="card1-flip-inner" class="card-flip-inner">
+            <div id="card1-flip-front" class="card-flip-front">
+              <img
+                id="card1-back"
+                src="assets/images/card-back.webp"
+                alt="Back of a playing card"
+              />
             </div>
+            <div id="card1-flip-back" class="card-flip-back">
+              <img
+                id="card1-front"
+                src="assets/images/elf.webp"
+                alt="An image of an elf"
+              />
+            </div>
+          </div>
         </div>
+        <div
+          id="card2-flip"
+          class="col-4 col-md-3 card-flip game-card"
+          data-num="two"
+        >
+          <div id="card2-flip-inner" class="card-flip-inner">
+            <div id="card2-flip-front" class="card-flip-front">
+              <img
+                id="card2-back"
+                src="assets/images/card-back.webp"
+                alt="Back of a playing card"
+              />
+            </div>
+            <div id="card2-flip-back" class="card-flip-back">
+              <img
+                id="card2-front"
+                src="assets/images/elf.webp"
+                alt="An image of an elf"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          id="card3-flip"
+          class="col-4 col-md-3 card-flip game-card"
+          data-num="three"
+        >
+          <div id="card3-flip-inner" class="card-flip-inner">
+            <div id="card3-flip-front" class="card-flip-front">
+              <img
+                id="card3-back"
+                src="assets/images/card-back.webp"
+                alt="Back of a playing card"
+              />
+            </div>
+            <div id="card3-flip-back" class="card-flip-back">
+              <img
+                id="card3-front"
+                src="assets/images/elf.webp"
+                alt="An image of an elf"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!--Bootstrap JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
-        <!--Custom JS-->    
-        <script src="assets/js/script.js"></script>
-
-    </body>
-
+    <!--Custom JS-->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
