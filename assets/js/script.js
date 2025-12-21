@@ -3,17 +3,6 @@
 // Wait for the DOM to finish loading before running functions
 document.addEventListener("DOMContentLoaded", function () {
 
-//Apply event listener to cards & activate flip 
-    let gameCards = document.getElementsByClassName("game-card");
-    if (gameCards) { //To check if we're on the right page
-        for (let gameCard of gameCards) {
-            gameCard.addEventListener("click", function () {
-                this.classList.add("flipped");
-                          
-            });
-        }
-    }
-
     runGame();
 })
 
@@ -21,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
  * Game container function
  */
 function runGame() {
+    let flippedCards = []; //Store flipped cards
+    let boardLocked = false; //Cards are clickable
+
     //Store card details
     const cardData = [
         { src: "assets/images/elf.webp", alt: "elf" },
@@ -47,7 +39,51 @@ function runGame() {
         const cardImg = cardEl.querySelector(".card-flip-back img");
         cardImg.src = card.src;
         cardImg.alt = card.alt;
+
+        //Apply event listener to cards & activate flip 
+        cardEl.addEventListener("click", function () {
+            if (boardLocked || this.classList.contains("flipped")) {
+                return;
+            }
+
+            //Flip the card
+            this.classList.add("flipped");
+            flippedCards.push(this);
+
+            //Check if 2 cards are flipped
+            if (flippedCards.length === 2) {
+                boardLocked = true; //lock the board
+                checkMatch();
+            }
+        });
+
     });
+
+
+    /**
+    * Check it the 2 flipped cards match
+    */
+    function checkMatch() {
+        const [card1, card2] = flippedCards;
+        const isMatch = card1.dataset.card === card2.dataset.card;
+
+        if (isMatch) {
+            //Cards match - keep them flipped
+            //ToDo: Add function to display success message
+            flippedCards = [];
+            boardLocked = false;
+        } else {
+            //No match - flip cards back
+            //ToDo: Add function to display no match message
+            setTimeout(function () {
+                card1.classList.remove("flipped");
+                card2.classList.remove("flipped");
+                flippedCards = [];
+                boardLocked = false;
+            }, 1000);
+        }
+    }
+
 }
 
 /**
@@ -60,4 +96,6 @@ function shuffle(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
+
+
 
