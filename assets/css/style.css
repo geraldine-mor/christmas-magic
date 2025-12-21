@@ -1,6 +1,13 @@
 /*Apply background colours to check link and see layout*/
 body {
     background-color: green;
+    position: relative;
+}
+/*Our team button*/
+.top-right-spell {
+    position: absolute;
+    top: 5px;
+    right: 10px;
 }
 
 div {
