@@ -1,6 +1,7 @@
 /*Apply background colours to check link and see layout*/
 body {
     background-color: green;
+    min-height: 100vh;
     position: relative;
 }
 /*Our team button*/
@@ -8,11 +9,6 @@ body {
     position: absolute;
     top: 5px;
     right: 10px;
-}
-
-div {
-    background-color: beige;
-    
 }
 
 .row {
