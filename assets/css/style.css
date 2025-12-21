@@ -50,3 +50,44 @@ img {
 .card-flip-back {
     transform: rotateY(-180deg);
 }
+
+/*Our team*/
+
+.card-img-top {
+  width: 100%;
+  height: auto;           
+  object-fit: cover;        
+  object-position: center;  
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;   
+}
+
+.card-body { background-color: snow !important;
+}
+/* Team page overrides ONLY */
+.team-page {
+  background: url("../images/Team-background.webp") center / cover no-repeat;
+}
+
+.team-page div {
+  background-color: transparent;
+}
+
+.team-page h1 {
+
+  font-family: 'Macondo', cursive;
+  font-weight: bold;
+  color: red;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+.team-page h3 {
+  font-family: 'Mountains of Christmas', cursive;
+  font-weight: bolder;
+    }
