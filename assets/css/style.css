@@ -84,7 +84,13 @@ body {
 /* Team page overrides ONLY */
 .team-page {
   background: url("../images/Team-background.webp") center / cover no-repeat;
+  height: 100%;
 }
+button img {
+  width:auto;
+  height: 110px;
+}
+
 
 .team-page div {
   background-color: transparent;
