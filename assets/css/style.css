@@ -17,24 +17,22 @@ body {
 } */
 
 
-
 /* Card Game */
 
-img {
+#game-container img {
   height: 125px;
   border-radius: 10px;
   display: block;
   margin: auto;
-  box-shadow: 0 0 10px rgba(255,255,255,0.4); /* ❄️ Frosted glow */
+  /*Moved the border and boxshadow to the image not the div for improved visuals on larger*/
+  border: 3px solid rgba(255,0,0,0.4); /* 🎄 Red festive border */
+  box-shadow: 0 0 12px rgba(0,0,0,0.4), 0 0 10px rgba(255,255,255,0.4); /* ❄️ Frosted glow */
 }
 
 .card-flip {
   height: 125px;
   perspective: 1000px;
   padding: 0;
-  border: 3px solid rgba(255,0,0,0.4); /* 🎄 Red festive border */
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
 
 .card-flip-inner {
@@ -140,14 +138,14 @@ img {
 /* Intro text */
 .intro-text {
   font-size: 1.2rem;
-  color: white;
+  color: green;
   text-shadow: 1px 1px 3px black;
 }
 /* Footer */
 .christmas-footer {
   text-align: center;
   padding: 10px;
-  color: white;
+  color: green;
   text-shadow: 2px 2px 3px black;
   font-family: 'Mountains of Christmas', cursive;
 }
@@ -164,7 +162,7 @@ img {
 
 /* Tablets and medium screens */
 @media screen and (min-width: 768px) {
-  img {
+  #game-container img {
     height: 150px;  /* Bigger cards */
   }
   .card-flip {
@@ -184,7 +182,7 @@ img {
 
 /* Large screens (Laptops, descktops) */
 @media screen and (min-width: 1024px) {
-  img {
+  #game-container img {
     height: 190px;  /* bigger cards*/
   }
   .card-flip {
@@ -203,7 +201,7 @@ img {
 }
 /* Extra large screens (1440px) */
 @media screen and (min-width: 1440px) {
-  img {
+  #game-container img {
     height: 230px; /* bigger cards */
   }
   .card-flip {
