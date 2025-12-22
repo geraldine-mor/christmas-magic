@@ -106,7 +106,7 @@ button img {
 .team-page h3 {
   font-family: "Mountains of Christmas", cursive;
   font-weight: bolder;
-  color: green;
+  color: #0B600B;
   text-shadow: 0 0 8px rgba(0,0,0,0.6);
 }
 /* Homepage background */
@@ -144,14 +144,14 @@ button img {
 /* Intro text */
 .intro-text {
   font-size: 1.2rem;
-  color: green;
+  color: #0B600B;
   text-shadow: 1px 1px 3px black;
 }
 /* Footer */
 .christmas-footer {
   text-align: center;
   padding: 10px;
-  color: green;
+  color: #0B600B;
   text-shadow: 2px 2px 3px black;
   font-family: 'Mountains of Christmas', cursive;
 }
