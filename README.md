@@ -3,7 +3,8 @@
 
 The Christmas Magic Memory Card Game is a festive, fully responsive web-based game designed to be enjoyed on all devices — from mobile phones and tablets to desktop computers.
 
-<img width="1072" height="787" alt="Home page" src="https://github.com/user-attachments/assets/7f2f5476-775a-468f-896c-3085296caf57">
+<img width="1367" height="805" alt="image" src="https://github.com/user-attachments/assets/2923849f-464a-44a0-a058-9c8c949bf2fc">
+
 
 
 
