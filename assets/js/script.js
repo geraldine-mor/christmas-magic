@@ -19,6 +19,8 @@ function runGame() {
     const errorSound = new Audio("assets/sounds/error.mp3");
     const winSound = new Audio("assets/sounds/win.mp3");
 
+    document.getElementById("win-modal").classList.add("hidden");
+
     //Store card details
     const cardData = [
         { src: "assets/images/elf.webp", alt: "elf" },
@@ -89,7 +91,11 @@ function runGame() {
             if (matchedPairs === 6) {
                 setTimeout(function() {
                     winSound.play();
-                }, 500);                
+                }, 500);  
+                document.getElementById("win-modal").classList.replace("hidden", "fade-in-out");
+                setTimeout(function() {
+                document.getElementById("win-modal").classList.replace("fade-in-out", "hidden");
+                }, 7000);              
             }
         } else {
             //No match - flip cards back
@@ -131,6 +137,7 @@ function resetGame() {
         card.classList.remove("flipped");
     });
 
+    document.getElementById("win-modal").className = ("d-flex flex-column hidden")
     setTimeout(runGame, 1000);
 }
 
