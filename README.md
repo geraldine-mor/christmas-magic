@@ -231,7 +231,9 @@ The Christmas Magic Memory Card Game repository was cloned and run locally using
 1. Install **GitHub Desktop** on your computer.
 2. Log in to your GitHub account through the application.
 3. Select **File → Clone Repository**.
-4. Select the project repository URL: ```https://github.com/geraldine-mor/christmas-magic.git ```
+4. Select the project repository URL:
+```bash
+   https://github.com/geraldine-mor/christmas-magic.git
 
 
 ### Publishing the Site
