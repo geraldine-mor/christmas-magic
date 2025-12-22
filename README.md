@@ -234,6 +234,7 @@ The Christmas Magic Memory Card Game repository was cloned and run locally using
 4. Select the project repository URL:
 ```bash
    https://github.com/geraldine-mor/christmas-magic.git
+```
 
 
 ### Publishing the Site
