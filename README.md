@@ -75,6 +75,9 @@ With no complex controls or time pressure, the game offers a calm and enjoyable 
 ### Development & Planning
 User stories were planned and tracked during development to ensure a smooth and user-focused experience. Each story included clear acceptance criteria and development tasks, helping maintain progress and ensure the game met its usability and accessibility goals.
 
+<img width="1832" height="808" alt="Planning " src="https://github.com/user-attachments/assets/02d81f56-6589-4d05-a813-c7df132b884f">
+
+
 
 ## 2. Design
 
