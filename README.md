@@ -85,6 +85,8 @@ User stories were planned and tracked during development to ensure a smooth and 
 
 The colour scheme for the Christmas Magic Memory Card Game was derived from the festive background image used on the Home page. The palette reflects traditional Christmas colours while maintaining clarity, contrast, and accessibility.
 
+<img width="1266" height="862" alt="WebAIM contrast checker" src="https://github.com/user-attachments/assets/ac817ab9-6f5f-47d7-9be3-007ae240aae2">
+
 The primary colours used include:
 
 - **Dark Winter Blue** – `rgb(15, 4, 57)` / `#0F0439`  
