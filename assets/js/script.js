@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
 function runGame() {
     let flippedCards = []; //Store flipped cards
     let boardLocked = false; //Cards are clickable
+    let matchedPairs = 0; //Track number of matched pairs
+
+    //Sound effects
+    const matchSound = new Audio("assets/sounds/match.mp3");
+    const errorSound = new Audio("assets/sounds/error.mp3");
+    const winSound = new Audio("assets/sounds/win.mp3");
 
     //Store card details
     const cardData = [
@@ -73,12 +79,21 @@ function runGame() {
 
         if (isMatch) {
             //Cards match - keep them flipped
-            //ToDo: Add function to display success message
+            matchSound.play();
+            matchedPairs++;
+
             flippedCards = [];
             boardLocked = false;
+
+            //Check if all cards matched
+            if (matchedPairs === 6) {
+                setTimeout(function() {
+                    winSound.play();
+                }, 500);                
+            }
         } else {
             //No match - flip cards back
-            //ToDo: Add function to display no match message
+            
             setTimeout(function () {
                 card1.classList.remove("flipped");
                 card2.classList.remove("flipped");
