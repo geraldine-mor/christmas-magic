@@ -173,13 +173,15 @@ The cards are arranged using Bootstrap’s grid system, displaying side by side 
 
 The page design is visually enriched with a winter-themed background featuring frosted pine branches, ornaments, and warm holiday colours. Festive typography is used for the **“Our Team”** heading to match the overall Christmas aesthetic of the project.
 
-![Our-team-button](https://github.com/user-attachments/assets/c15898e1-bd8a-48b0-80bf-85f8bca59234)
+<img alt="Our team" src="https://github.com/user-attachments/assets/cd47590c-524a-491a-81c0-9fd213ca72d6" width="200">
+
 
 
 A clearly styled **“Return Home”** button is placed at the bottom of the page, allowing users to easily navigate back to the main game page. The layout, colour scheme, and typography remain consistent with the Home page, ensuring a cohesive and immersive festive experience across the site.
 
 
-![Return_home](https://github.com/user-attachments/assets/ba3bfdf0-bbb7-435b-81af-960721c13c6c)
+<img alt="Return home" src="https://github.com/user-attachments/assets/578005c3-2f2d-4e94-8dc9-70f120fb5c95" width="200">
+
 
 
 ## 4 Frameworks, Libraries & Programs Used
