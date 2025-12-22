@@ -172,11 +172,16 @@ Unlike traditional websites, the Home page does not include a navigation bar. In
 
 Below this button, the main game area displays a grid of Christmas-themed cards. Players can select and flip the cards to reveal their images, with the objective of finding matching pairs. The interaction is simple and intuitive, allowing users to start playing immediately without instructions.
 
+![home page1](https://github.com/user-attachments/assets/1735b747-2e54-4417-ab96-09daff8f79a3)
+
+
 The clean layout and limited interface elements help keep the user’s attention on the game itself, creating a smooth and enjoyable playing experience.
 
 ## 3.2 About Page (Our Team)
 
 The **Our Team** page (`about.html`) introduces the creators of the Christmas Magic Memory Card Game using **four Bootstrap cards**, each representing a team member.
+
+![GIF team page](https://github.com/user-attachments/assets/826eb87d-6b47-4fa9-9494-9c32348b2822)
 
 Each card includes:
 - A festive, Christmas-themed image  
