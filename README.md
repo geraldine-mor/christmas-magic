@@ -174,6 +174,7 @@ Below this button, the main game area displays a grid of Christmas-themed cards.
 
 ![home page1](https://github.com/user-attachments/assets/1735b747-2e54-4417-ab96-09daff8f79a3)
 
+Upon completing the game successfully, players are greeted with festive Christmas congratulations from Santa Claus.
 
 The clean layout and limited interface elements help keep the user’s attention on the game itself, creating a smooth and enjoyable playing experience.
 
