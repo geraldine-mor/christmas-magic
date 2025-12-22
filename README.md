@@ -288,6 +288,11 @@ Tests were conducted for both mobile and desktop views to ensure the game meets 
 ### 6.3.1 W3C HTML and CSS
 
 All HTML pages and the CSS file were validated using the official **W3C HTML Validator** and **CSS Jigsaw Validator** to ensure clean, standards-compliant code.
+|   |   |
+|---|---|
+|<img  alt="W3C HTML validator" src="https://github.com/user-attachments/assets/7b612be8-0473-44c6-bb6e-7244b807f8a0" width="300">|<img alt="Jigsaw W3C CSS validator" src="https://github.com/user-attachments/assets/b823c0c1-589e-42a2-82ea-88cb227da87e" width="300">|
+
+
 
 **Note:**  
 Custom CSS rules were applied where necessary to achieve specific design and functionality goals while maintaining valid code.
