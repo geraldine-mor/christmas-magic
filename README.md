@@ -3,7 +3,8 @@
 
 The Christmas Magic Memory Card Game is a festive, fully responsive web-based game designed to be enjoyed on all devices — from mobile phones and tablets to desktop computers.
 
-<img width="1141" height="787" alt="Home page" src="https://github.com/user-attachments/assets/4d112ac0-bc0a-430d-ba16-01cc45234866">
+<img width="1072" height="787" alt="Home page" src="https://github.com/user-attachments/assets/7f2f5476-775a-468f-896c-3085296caf57">
+
 
 
 ## 🎯 About the Game
@@ -74,6 +75,9 @@ With no complex controls or time pressure, the game offers a calm and enjoyable 
 ### Development & Planning
 User stories were planned and tracked during development to ensure a smooth and user-focused experience. Each story included clear acceptance criteria and development tasks, helping maintain progress and ensure the game met its usability and accessibility goals.
 
+<img width="1832" height="808" alt="Planning " src="https://github.com/user-attachments/assets/02d81f56-6589-4d05-a813-c7df132b884f">
+
+
 
 ## 2. Design
 
@@ -132,12 +136,13 @@ The Christmas Magic Memory Card Game consists of two main pages designed to prov
   This page contains the core functionality of the game. Players can interact with the Christmas-themed memory cards, flip them to find matching pairs, and restart the game at any time. The layout is clean, festive, and fully responsive, allowing seamless gameplay across all device sizes.
 
 
-  <img width="1141" height="787" alt="Home page" src="https://github.com/user-attachments/assets/01cf0ed7-797c-46e4-8593-f52ae8014e4d">
+ <img width="1072" height="787" alt="Home page" src="https://github.com/user-attachments/assets/c40cc7ee-1939-4925-a8f0-cbdf4cff60a9">
+
 
 - **Our Team Page (about.html)**  
   This page introduces the team behind the game. It provides brief information about the creators, helping users understand the project’s background and purpose while maintaining the same Christmas-themed design and typography.
 
-  <img width="1150" height="758" alt="Our team page" src="https://github.com/user-attachments/assets/84f1d70a-5d28-4660-96a2-580975c2c18a">
+ <img width="1070" height="762" alt="Team page" src="https://github.com/user-attachments/assets/05cfa6cf-345f-43d7-a689-fbbaf8482f69">
 
 
 ### Design & Technologies
@@ -288,6 +293,11 @@ Tests were conducted for both mobile and desktop views to ensure the game meets 
 ### 6.3.1 W3C HTML and CSS
 
 All HTML pages and the CSS file were validated using the official **W3C HTML Validator** and **CSS Jigsaw Validator** to ensure clean, standards-compliant code.
+|   |   |
+|---|---|
+|<img  alt="W3C HTML validator" src="https://github.com/user-attachments/assets/7b612be8-0473-44c6-bb6e-7244b807f8a0" width="600">|<img alt="Jigsaw W3C CSS validator" src="https://github.com/user-attachments/assets/b823c0c1-589e-42a2-82ea-88cb227da87e" width="600">|
+
+
 
 **Note:**  
 Custom CSS rules were applied where necessary to achieve specific design and functionality goals while maintaining valid code.
