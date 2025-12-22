@@ -34,14 +34,18 @@ function runGame() {
     gameCards.forEach(function (cardEl, index) {
         const card = cards[index];
 
-        cardEl.dataset.card = card.alt
+        // Remove any existing listeners by cloning the element - Solution provided by Claude.ai
+        const newCardEl = cardEl.cloneNode(true);
+        cardEl.parentNode.replaceChild(newCardEl, cardEl);
 
-        const cardImg = cardEl.querySelector(".card-flip-back img");
+        newCardEl.dataset.card = card.alt
+
+        const cardImg = newCardEl.querySelector(".card-flip-back img");
         cardImg.src = card.src;
         cardImg.alt = card.alt;
 
         //Apply event listener to cards & activate flip 
-        cardEl.addEventListener("click", function () {
+        newCardEl.addEventListener("click", function () {
             if (boardLocked || this.classList.contains("flipped")) {
                 return;
             }
@@ -84,6 +88,11 @@ function runGame() {
         }
     }
 
+    //Apply event listener to game reset button
+    let gameBtn = document.getElementById("game-reset");
+
+    gameBtn.addEventListener("click", resetGame, { once : true});
+
 }
 
 /**
@@ -97,5 +106,17 @@ function shuffle(array) {
     }
 }
 
+/**
+ * Reset the game to play again
+ */
+function resetGame() {
+    //Flip all cards back "face-down"
+    const gameCards = document.querySelectorAll(".game-card");
+    gameCards.forEach(function (card) {
+        card.classList.remove("flipped");
+    });
+
+    setTimeout(runGame, 1000);
+}
 
 
