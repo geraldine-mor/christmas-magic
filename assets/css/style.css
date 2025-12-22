@@ -16,6 +16,8 @@ body {
   background-color: beige;     
 } */
 
+
+
 /* Card Game */
 
 img {
@@ -23,12 +25,16 @@ img {
   border-radius: 10px;
   display: block;
   margin: auto;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4); /* ❄️ Frosted glow */
 }
 
 .card-flip {
   height: 125px;
   perspective: 1000px;
   padding: 0;
+  border: 3px solid rgba(255,0,0,0.4); /* 🎄 Red festive border */
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
 
 .card-flip-inner {
@@ -74,6 +80,8 @@ img {
 
 .card-body {
   background-color: snow !important;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255,215,0,0.5); /* ✨ Golden glow */
 }
 /* Team page overrides ONLY */
 .team-page {
@@ -89,11 +97,13 @@ img {
   font-weight: bold;
   color: red;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 12px gold, 0 0 20px white; /* ⭐ Magical glow */
 }
 .team-page h3 {
   font-family: "Mountains of Christmas", cursive;
   font-weight: bolder;
+  color: white;
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
 }
 /* Homepage background */
 .homepage {
@@ -106,12 +116,107 @@ img {
   font-family: 'Mountains of Christmas', cursive;
   font-size: 3rem;
   color: #ff0000;
-  text-shadow:  2px 2px 4px black;
+  text-shadow: 0 0 12px rgba(255,255,255,0.9), 0 0 20px gold; /* ✨ Glow */
+  animation: glowPulse 2.5s infinite alternate;
 }
-
+@keyframes glowPulse {
+  from { text-shadow: 0 0 10px red; }
+  to   { text-shadow: 0 0 20px gold; }
+}
+/* Homepage button styling */
+.homepage-btn {
+  margin-top: 20px;
+  display: inline-block;
+  transition: transform 0.3 ease;
+}
+.homepage-btn img {
+  width: 170px;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.7)); /* ❄️ Frost glow */
+}
+/*  Hover effect */
+.homepage-btn:hover {
+  transform: scale(1.12) rotate(-2deg); /* 🎁 playful hover */
+}
 /* Intro text */
 .intro-text {
   font-size: 1.2rem;
   color: white;
   text-shadow: 1px 1px 3px black;
+}
+/* Footer */
+.christmas-footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-family: 'Mountains of Christmas', cursive;
+}
+/* Festive game container styling */
+#game-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 4px solid red;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Tablets and medium screens */
+@media screen and (min-width: 768px) {
+  img {
+    height: 150px;  /* Bigger cards */
+  }
+  .card-flip {
+    height: 150px;  /* must mach img */
+  }
+  .homepage-btn img {
+    width: 200px; /* bigger button */
+  }
+   /* Bigger title + paragraph */
+  .christmas-title {
+    font-size: 3.5rem;
+  }
+  .intro-text {
+    font-size: 1.4rem;
+  }
+}
+
+/* Large screens (Laptops, descktops) */
+@media screen and (min-width: 1024px) {
+  img {
+    height: 190px;  /* bigger cards*/
+  }
+  .card-flip {
+    height: 190px;  /* must mach img */
+  }
+  .homepage-btn img {
+    width: 240px; /* bigger button */
+  }
+  /* Bigger title + paragraph */
+  .christmas-title {
+    font-size: 4rem;
+  }
+  .intro-text {
+    font-size: 1.6rem;
+  }
+}
+/* Extra large screens (1440px) */
+@media screen and (min-width: 1440px) {
+  img {
+    height: 230px; /* bigger cards */
+  }
+  .card-flip {
+    height: 230px;  /* must mach img */
+  }
+  .homepage-btn img {
+    width: 280px; /* biggest button */
+  }
+  /* Biggest title + paragraph */
+  .christmas-title {
+    font-size: 4.5rem;
+  }
+  .intro-text {
+    font-size: 1.8rem;
+  }
 }
