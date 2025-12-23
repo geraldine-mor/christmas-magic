@@ -154,7 +154,13 @@ The Christmas Magic Memory Card Game consists of two main pages designed to prov
 
  <img width="1070" height="762" alt="Team page" src="https://github.com/user-attachments/assets/05cfa6cf-345f-43d7-a689-fbbaf8482f69">
 
+### Future Features
 
+- **Disable sounds button** - Give the user the ability to remove sounds without relying on device mute button for improved user experience
+- **Guess Counter** - Allow the user to track their guesses and try to improve their score
+- **Difficulty Levels** - Allow more cards to increase difficulty, add a reveal cards button to allow people a look at the board before playing to reduce difficulty
+- **Different Themes** - The current game is Christmas themed, other card and background styles could be added to improve longevity of the game
+  
 ### Design & Technologies
 
 - Fully responsive layout for mobile, tablet, and desktop devices  
