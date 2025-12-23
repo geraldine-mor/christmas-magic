@@ -133,6 +133,7 @@ CloudConvert was used to resize and optimize the images, ensuring they are suita
 
 The imagery focuses on clear, Christmas-themed visuals that are easy to recognize during gameplay, helping players quickly identify card pairs while maintaining a cheerful holiday atmosphere.
 
+The game cards were created with [Adobe Firefly](https://firefly.adobe.com/generate/image).
 
 
 ## 3. Features
@@ -308,14 +309,12 @@ Tests were conducted for both mobile and desktop views to ensure the game meets 
 
 ## 6.3 Validation
 
-### 6.3.1 W3C HTML and CSS
+### 6.3.1 W3C HTML, CSS & JavaScript
 
-All HTML pages and the CSS file were validated using the official **W3C HTML Validator** and **CSS Jigsaw Validator** to ensure clean, standards-compliant code.
-|   |   |
-|---|---|
-|<img  alt="W3C HTML validator" src="https://github.com/user-attachments/assets/7b612be8-0473-44c6-bb6e-7244b807f8a0" width="600">|<img alt="Jigsaw W3C CSS validator" src="https://github.com/user-attachments/assets/b823c0c1-589e-42a2-82ea-88cb227da87e" width="600">|
-
-
+All HTML pages and the CSS file were validated using the official **W3C HTML Validator**, **CSS Jigsaw Validator** & **JsHint** to ensure clean, standards-compliant code.
+|   |   |   |
+|---|---|---|
+|<img  alt="W3C HTML validator" src="https://github.com/user-attachments/assets/7b612be8-0473-44c6-bb6e-7244b807f8a0" width="600">|<img alt="Jigsaw W3C CSS validator" src="https://github.com/user-attachments/assets/b823c0c1-589e-42a2-82ea-88cb227da87e" width="600">|<img width="1026" height="367" alt="image" src="https://github.com/user-attachments/assets/a0b35b03-3f93-4af1-8175-f3a8990f35e1" />|
 
 **Note:**  
 Custom CSS rules were applied where necessary to achieve specific design and functionality goals while maintaining valid code.
@@ -326,16 +325,22 @@ Custom CSS rules were applied where necessary to achieve specific design and fun
 
 ### 7.1 Code Used
 - **Bootstrap 5.3** – Used for layout structure, card styling, buttons, and responsive design elements.
+- [**Geeks for Geeks**](https://www.geeksforgeeks.org/javascript/javascript-program-to-shuffle-deck-of-cards/) - Shuffle action for cards on game start
 
 ### 7.2 Content
 - **ChatGPT (OpenAI)** – Assisted with writing and refining README content and documentation text.
 - **Google Fonts** – Used for typography selection.
 
-
 ### 7.3 Media
 - **Font Awesome** – Used for icons.
 - **CloudConvert** – Used for image conversion and optimisation.
 - **Ezgif** – Used to generate and optimise GIF images.
+- **Adobe Friefly** - Used to create game card images
+- [**Pexels**](https://pixabay.com/illustrations/ai-generated-santa-claus-gift-9223788/) - Santa image for game completion modal
+- [**Free Sound**](https://freesound.org/people/BristolStories/sounds/51715/) - Bells sound effect for correct match
+- [**Pexels**](https://pixabay.com/illustrations/ai-generated-santa-claus-gift-9223788/) - Ho Ho Ho sound effect for game completion
+- [**Flat Icon](https://www.flaticon.com/free-icon/snowman_3912767?term=snowman&page=1&position=2&origin=search&related_id=3912767) - Snowman icon used for favicon
+- [**favicon.io**](https://www.favicon.io) - Used to convert the icon to a favicon
 
 ### 7.4 Documentation and Testing Resources
 - Markdown cheat sheets  
