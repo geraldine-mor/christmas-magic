@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     runGame();
-})
+});
 
 /**
  * Game container function
@@ -16,7 +16,6 @@ function runGame() {
 
     //Sound effects
     const matchSound = new Audio("assets/sounds/match.mp3");
-    const errorSound = new Audio("assets/sounds/error.mp3");
     const winSound = new Audio("assets/sounds/win.mp3");
 
     document.getElementById("win-modal").classList.add("hidden");
@@ -46,7 +45,7 @@ function runGame() {
         const newCardEl = cardEl.cloneNode(true);
         cardEl.parentNode.replaceChild(newCardEl, cardEl);
 
-        newCardEl.dataset.card = card.alt
+        newCardEl.dataset.card = card.alt;
 
         const cardImg = newCardEl.querySelector(".card-flip-back img");
         cardImg.src = card.src;
@@ -137,7 +136,7 @@ function resetGame() {
         card.classList.remove("flipped");
     });
 
-    document.getElementById("win-modal").className = ("d-flex flex-column hidden")
+    document.getElementById("win-modal").className = ("d-flex flex-column hidden");
     setTimeout(runGame, 1000);
 }
 
